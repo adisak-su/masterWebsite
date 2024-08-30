@@ -6,7 +6,25 @@
     
     <?php include "apple-meta.php"; ?>
     
+    <!--
+    <link rel="shortcut icon" href="assets/image/favicon.ico">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest?<?php echo time(); ?>">
+    
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="../assets/image/favicons/favicon.ico">
+      -->
+
     <!-- Boxicons -->
+    <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
     <link href='plugins/boxicons/css/boxicons.min.css' rel='stylesheet'>
     <script src="plugins/boxicons/dist/boxicons.js"></script>
 
@@ -25,7 +43,25 @@
     <!-- CONTENT -->
     <section id="content">
         <!-- NAVBAR -->
-        <?php include "navbar.php"; ?>
+        <nav>
+            <i class='bx bx-menu bx-md' style="color:var(--blue);"></i>
+            <a href="#" class="nav-link">Categories</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn" title="xxx"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode"></label>
+            <a href="#" class="notification">
+                <i class='bx bxs-bell bx-tada'></i>
+                <span class="num">8</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="img/people.png" alt="">
+            </a>
+        </nav>
         <!-- NAVBAR -->
 
         <!-- MAIN -->

@@ -16,7 +16,7 @@ function isActive($data)
 
 <!-- SIDEBAR -->
 <section id="sidebar">
-    <a href="#" class="brand">
+    <a href="index.php" class="brand">
         <i class='bx bxs-store-alt bx-md'></i>
         <!-- <i class='bx bxs-smile'></i> -->
         <span class="text">AdminHub</span>
