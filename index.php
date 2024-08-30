@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     
     <?php include "apple-meta.php"; ?>
+
+    <?php include "splashScreen.php"; ?>
     
     <!-- Boxicons -->
     <link href='plugins/boxicons/css/boxicons.min.css' rel='stylesheet'>
