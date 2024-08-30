@@ -1,0 +1,12 @@
+{
+    "name": "ร้านอาม่า",
+    "short_name": "ร้านอาม่า",
+    "icons": [
+        {
+            "src": "assets/image/store.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "display": "standalone"
+}
