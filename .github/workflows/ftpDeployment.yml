@@ -1,0 +1,22 @@
+name: FTP Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy-yin-pp2831-com:
+          name: Deploy website on yin-pp2831-com
+          runs-on: ubuntu-latest
+          steps:
+          - name: Get latest code
+            uses: actions/checkout@v3
+      
+          - name: Push files
+            uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+            with:
+              server: ftp.pp2831.com
+              username: tee@pp2831.com #yin@pp2831.com
+              password: ${{ secrets.FTP_PASSWORD }}
+              server-dir: /public_html/masterWebsite/  # เปลี่ยนเป็นเส้นทางที่ถูกต้องของเว็บไซต์
