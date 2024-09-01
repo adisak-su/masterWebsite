@@ -20,6 +20,7 @@ li {
 
   --light: #f9f9f9;
   --blue: #3c91e6;
+  --blue: #0e60b3;
   --light-blue: #cfe8ff;
   --grey: #eee;
   --dark-grey: #aaaaaa;
@@ -63,6 +64,7 @@ body {
   width: var(--sidebar-max-width);
   height: 100%;
   background: var(--light);
+  background: var(--orange);
   z-index: 2000;
   font-family: var(--lato);
   transition: 0.3s ease;
@@ -77,6 +79,7 @@ body {
   display: none;
 } */
 #sidebar.hide {
+  width: calc(var(--sidebar-min-width) - 1px);
   width: var(--sidebar-min-width);
 }
 #sidebar .brand {
@@ -90,6 +93,8 @@ body {
   top: 0;
   left: 0;
   background: var(--light);
+  background: var(--orange);
+
   z-index: 500;
   padding-bottom: 20px;
   box-sizing: content-box;
@@ -113,12 +118,15 @@ body {
   height: 48px;
   background: transparent;
   margin-left: 6px;
+  margin-left: 8px;
   border-radius: 48px 0 0 48px;
   padding: 4px;
 }
 #sidebar .side-menu li.active {
   background: var(--grey);
   position: relative;
+  /* ByTee */
+  /* transform: translateX(5px) */
 }
 #sidebar .side-menu li.active::before {
   content: "";
@@ -146,6 +154,7 @@ body {
   width: 100%;
   height: 100%;
   background: var(--light);
+  background: var(--orange);
   display: flex;
   align-items: center;
   border-radius: 48px;
@@ -164,6 +173,8 @@ body {
 }
 #sidebar .side-menu li a.logout {
   color: var(--red);
+  color: var(--light);
+  
 }
 #sidebar .side-menu.top li a:hover {
   color: var(--blue);
@@ -272,6 +283,7 @@ body {
 #content nav .notification {
   font-size: 20px;
   position: relative;
+  margin-left: auto;
 }
 #content nav .notification .num {
   position: absolute;

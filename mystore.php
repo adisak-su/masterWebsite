@@ -16,6 +16,12 @@
 
     <title>My Store</title>
 
+    <style>
+        .taphold {
+            background-color: powderblue;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -42,6 +48,27 @@
                             <a class="active" href="index.php">Home</a>
                         </li>
                     </ul>
+                    <div>
+                        <button onMouseDown="popupMenu();" onMouseUp="stopTime();">click</button>
+                    </div>
+
+                    <div ontouchstart="popupMenu();" ontouchend="stopTime();" style="height: 200px;width: 50%;background-color: powderblue;">
+                    </div>
+                    <div class="box" style="height: 200px;width: 50%;" ontaphold="divtapholdHandler(this)">
+                    </div>
+                    <div ontouchstart="popupMenu();" ontouchend="stopTime();" style="height: 200px;width: 50%;background-color: powderblue;">
+
+                        <img src="assets/image/store.png" style="touch-action: none;width:30%" />
+
+
+                    </div>
+                    <div ontouchstart="popupMenu(event);" ontouchend="stopTime();" style="height: 200px;width: 50%;background-color: powderblue;">
+                        <img src="assets/image/store.png" style="--webkit-touch-callout: none; width:30%" />
+                    </div>
+
+                    <img src="assets/image/store.png" style="width:30%" ontouch="alert('click');"  ontouchstart="popupMenu(event);" ontouchend="stopTime();"  />
+                    <img src="assets/image/store.png" style="width:30%" onTouch="alert('onTouch');"  />
+
                 </div>
             </div>
         </main>
@@ -53,7 +80,66 @@
 
     <script src="scriptSidebar.js?<?php echo time(); ?>"></script>
     <script>
-        
+        let start;
+
+        function popupMenu(event) {
+
+            //alert(1);
+            //event = tmp.event();
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            start = setTimeout(function() {
+                alert(2);
+            }, 3000);
+        }
+
+        function stopTime() {
+            clearTimeout(start);
+        }
+
+        function divtapholdHandler(event) {
+            //alert(1);
+            //event.preventDefault();
+            // event.stopImmediatePropagation();
+
+
+            $(event.target).addClass("taphold");
+        }
+
+        $(function() {
+            $("div.box").bind("taphold", tapholdHandler);
+
+            function tapholdHandler(event) {
+                //alert(1);
+                //event.preventDefault();
+                // event.stopImmediatePropagation();
+
+
+                $(event.target).addClass("taphold");
+            }
+        });
+
+        $(function() {
+            $("img").bind("taphold", tapholdHandler);
+
+            function tapholdHandler(event) {
+                alert(1);
+                event.preventDefault();
+                event.stopImmediatePropagation();
+
+
+                //$( event.target ).addClass( "taphold" );
+            }
+        });
+
+        jQuery("img").on("taphold", function(event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+        })
+        jQuery("img").on("ontouchstart", function(event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+        })
     </script>
 </body>
 

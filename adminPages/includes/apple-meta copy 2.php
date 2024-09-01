@@ -29,4 +29,4 @@
 <link rel="apple-touch-icon" sizes="152x152" href="assets/iconified/apple-touch-icon-152x152.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="assets/iconified/apple-touch-icon-180x180.png" />
 
-<link rel="manifest" href="shop.webmanifest?<?php echo time(); ?>">
+<link rel="manifest" href="/adminPages/includes/shop.webmanifest?<?php echo time(); ?>">

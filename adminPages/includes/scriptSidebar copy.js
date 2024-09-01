@@ -20,21 +20,21 @@ menuBar.addEventListener('click', function () {
 	sidebar.classList.toggle('hide');
 })
 
-const searchButton = document.querySelector('#content nav form .form-input button');
-const searchButtonIcon = document.querySelector('#content nav form .form-input button .bx');
-const searchForm = document.querySelector('#content nav form');
+// const searchButton = document.querySelector('#content nav form .form-input button');
+// const searchButtonIcon = document.querySelector('#content nav form .form-input button .bx');
+// const searchForm = document.querySelector('#content nav form');
 
-searchButton.addEventListener('click', function (e) {
-	if(window.innerWidth < 576) {
-		e.preventDefault();
-		searchForm.classList.toggle('show');
-		if(searchForm.classList.contains('show')) {
-			searchButtonIcon.classList.replace('bx-search', 'bx-x');
-		} else {
-			searchButtonIcon.classList.replace('bx-x', 'bx-search');
-		}
-	}
-})
+// searchButton.addEventListener('click', function (e) {
+// 	if(window.innerWidth < 576) {
+// 		e.preventDefault();
+// 		searchForm.classList.toggle('show');
+// 		if(searchForm.classList.contains('show')) {
+// 			searchButtonIcon.classList.replace('bx-search', 'bx-x');
+// 		} else {
+// 			searchButtonIcon.classList.replace('bx-x', 'bx-search');
+// 		}
+// 	}
+// })
 
 /* Set sidebar  */
 setSidebarWidth();

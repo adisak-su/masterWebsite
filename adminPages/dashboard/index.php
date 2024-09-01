@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     
-    <?php include "apple-meta.php"; ?>
+    <?php include "../includes/apple-meta.php"; ?>
 
     <!-- Boxicons -->
-    <link href='plugins/boxicons/css/boxicons.min.css' rel='stylesheet'>
-    <script src="plugins/boxicons/dist/boxicons.js"></script>
+    <link href="../../plugins/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <script src="../../plugins/boxicons/dist/boxicons.js"></script>
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="styleRoot.css?<?php echo time(); ?>">
+    <link rel="stylesheet" href="../includes/styleRoot.css?<?php echo time(); ?>">
     <link rel="stylesheet" href="style.css?<?php echo time(); ?>">
 
     <title>AdminHub</title>
@@ -20,12 +20,12 @@
 
 <body>
     <!-- SIDEBAR -->
-    <?php include "sidebard.php"; ?>
+    <?php include "../includes/sidebard.php"; ?>
 
     <!-- CONTENT -->
     <section id="content">
         <!-- NAVBAR -->
-        <?php include "navbar.php"; ?>
+        <?php include "../includes/navbar.php"; ?>
         <!-- NAVBAR -->
 
         <!-- MAIN -->
@@ -92,7 +92,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="img/people.png" alt="">
+                                    <img src="../users/images/avatar.png" alt="">
                                     <p>John Doe</p>
                                 </td>
                                 <td>01-10-2021</td>
@@ -100,7 +100,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="img/people.png" alt="">
+                                    <img src="../users/images/avatar.png" alt="">
                                     <p>John Doe</p>
                                 </td>
                                 <td>01-10-2021</td>
@@ -108,7 +108,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="img/people.png" alt="">
+                                    <img src="../users/images/avatar.png" alt="">
                                     <p>John Doe</p>
                                 </td>
                                 <td>01-10-2021</td>
@@ -116,7 +116,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="img/people.png" alt="">
+                                    <img src="../users/images/avatar.png" alt="">
                                     <p>John Doe</p>
                                 </td>
                                 <td>01-10-2021</td>
@@ -124,7 +124,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="img/people.png" alt="">
+                                    <img src="../users/images/avatar.png" alt="">
                                     <p>John Doe</p>
                                 </td>
                                 <td>01-10-2021</td>
@@ -168,9 +168,9 @@
     </section>
     <!-- CONTENT -->
 
-    <script src="assets/js/3.6.0.jquery.min.js"></script>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
 
-    <script src="scriptSidebar.js?<?php echo time(); ?>"></script>
+    <script src="../includes/scriptSidebar.js?<?php echo time(); ?>"></script>
     <script>
         
     </script>

@@ -1,15 +1,12 @@
 <?php
 function isActive($data)
 {
-	/*
     $array = explode('/', $_SERVER['REQUEST_URI']);
     $key = array_search("adminPages", $array);
     $name = $array[$key + 1];
     return $name === $data ? 'active' : '';
-    */
     
     $strpos = strpos($_SERVER['REQUEST_URI'],$data);
-    
     return gettype($strpos) === "integer" ? 'active' : '';
 }
 ?>
@@ -19,19 +16,19 @@ function isActive($data)
     <a href="index.php" class="brand">
         <i class='bx bxs-store-alt bx-md'></i>
         <!-- <i class='bx bxs-smile'></i> -->
-        <span class="text">AdminHub</span>
+        <span class="text">Admin Store</span>
     </a>
     <ul class="side-menu top">
-        <li class="<?php echo isActive('dashboard.php'); ?>">
-            <a href="dashboard.php">
+        <li class="<?php echo isActive('dashboard'); ?>">
+            <a href="../dashboard">
                 <i class='bx bxs-dashboard'></i>
                 <span class="text">Dashboard</span>
             </a>
         </li>
-        <li class="<?php echo isActive('mystore.php'); ?>">
-            <a href="mystore.php">
+        <li class="<?php echo isActive('pages'); ?>">
+            <a href="../pages">
                 <i class='bx bxs-shopping-bag-alt'></i>
-                <span class="text">My Store</span>
+                <span class="text">Pages</span>
             </a>
         </li>
         <li class="<?php echo isActive('Analytics.php'); ?>">
@@ -53,7 +50,7 @@ function isActive($data)
             </a>
         </li>
     </ul>
-    <ul class="side-menu top">
+    <ul class="side-menu">
         <li>
             <a href="#">
                 <i class='bx bxs-cog'></i>
