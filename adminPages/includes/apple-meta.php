@@ -16,5 +16,5 @@
 <link rel="apple-touch-icon" sizes="152x152" href="../../assets/iconified/apple-touch-icon-152x152.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="../../assets/iconified/apple-touch-icon-180x180.png" />
 
-<link crossorigin="use-credentials" rel="manifest" href="../includes/manifest.json?<?php echo time(); ?>">
+<link crossorigin="use-credentials" rel="manifest" href="../includes/app.webmanifest?<?php echo time(); ?>">
 <!-- <link crossorigin="use-credentials" rel="manifest" href="./manifest.json" /> -->

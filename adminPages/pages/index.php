@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     
     <?php include "../includes/apple-meta.php"; ?>
+    <?php include "../includes/splashScreen.php"; ?>
 
     <!-- Boxicons -->
     <link href="../../plugins/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="../includes/styleRoot.css?<?php echo time(); ?>">
     <link rel="stylesheet" href="style.css?<?php echo time(); ?>">
 
-    <title>AdminHub</title>
+    <title>Admin-Page</title>
 
 </head>
 
@@ -32,10 +33,10 @@
         <main>
             <div class="head-title">
                 <div class="left">
-                    <h1>My Store</h1>
+                    <h1>My Page</h1>
                     <ul class="breadcrumb">
                         <li>
-                            <a href="#">My Store</a>
+                            <a href="#">My Page</a>
                         </li>
                         <li><i class='bx bx-chevron-right'></i></li>
                         <li>
