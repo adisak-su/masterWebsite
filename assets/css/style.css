@@ -1,0 +1,120 @@
+body,
+html {
+    height: 100%;
+    /* font-family: 'Sarabun', cursive !important; */
+    /* font-family: 'Mali', cursive !important; */
+    font-size: 0.95rem !important;
+}
+/*for text menu*/
+.dark-mode .nav-pills .nav-link {
+    color: #f8f8f8ec !important;
+}
+.nav-pills .nav-link {
+    color: #f8f8f8ec !important;
+}
+
+.bg {
+    background: #56baed;
+    background: linear-gradient(#37689A 0%, #64BEFF 50%, #0F4174 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* z-index: -1; */
+    /* clip-path: polygon(0 0, 55% 0, 45% 100%, 0% 100%); */
+}
+
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+    border-radius: 20px;
+    font-weight: 100px;
+}
+
+.toggle.ios .toggle-handle {
+    border-radius: 20px;
+}
+
+.toggle-on.btn {
+    padding-right: 19px;
+    font-weight: 100 !important;
+}
+
+.btn {
+    font-size: inherit !important;
+}
+
+.string-clip {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-50 {
+    border-radius: 50%;
+}
+
+.btn-12px {
+    border-radius: 12px;
+}
+
+.btn-25px {
+    border-radius: 25px;
+}
+
+.btn-right-25px {
+        	border-left: none;
+        	border-radius: 0px 25px 25px 0px;
+        	padding-right:15px;
+        	background: #ffffff;
+}
+
+.btn {
+    border-radius: 25px;
+}
+
+.button {
+    border-radius: 25px;
+}
+
+button {
+    border-radius: 25px;
+}
+
+.groupBtnIcon {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+    /* border: 2px solid black; */
+    justify-content: space-around;
+    /* .item {
+        min-width: 50px;
+    } */
+}
+
+.groupBtnIcon .item {
+    min-width: 50px;
+}
+
+.btnIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btnIcon .hide {
+    display: none;
+}
+
+@media (min-width: 414px) {
+    .btnText {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .btnText {
+        display: block;
+    }
+}
