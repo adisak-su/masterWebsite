@@ -1,3 +1,3 @@
 <?php
-    header("location: adminPages/dashboard");
+    header("location: login.php");
 ?>
