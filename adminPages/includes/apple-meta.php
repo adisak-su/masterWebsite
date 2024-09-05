@@ -5,6 +5,9 @@
 
 <!-- <link rel="icon" href="../../assets/iconified/favicon.ico" type="image/x-icon" /> -->
 
+<link rel="icons" sizes="192x192" href="../../assets/image/favicon-192x192.png" type="image/png" />
+<link rel="icons" sizes="512x512" href="../../assets/image/favicon-512x512.png" type="image/png" />
+
 <link rel="shortcut icon" href="../../assets/iconified/favicon.ico">
 <link rel="apple-touch-icon" href="../../assets/iconified/apple-touch-icon.png" />
 <link rel="apple-touch-icon" sizes="57x57" href="../../assets/iconified/apple-touch-icon-57x57.png" />
