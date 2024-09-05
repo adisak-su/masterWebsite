@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <?php include "../includes/apple-meta.php"; ?>
-    <?php include "../includes/splashScreen.php"; ?>
+    <?php include "../includes/startScreen.php"; ?>
 
     <!-- Boxicons -->
     <link href="../../plugins/boxicons/css/boxicons.min.css" rel="stylesheet">
