@@ -11,9 +11,9 @@ session_destroy(); // ลบตัวแปร session ทั้งหมด
     <title>Login || <?php echo $shopName; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Favicons -->
-    <?php include_once('startScreen.php'); ?>
 
     <?php include_once('favicons.php'); ?>
+    <?php include_once('startScreen.php'); ?>
 
     <link rel="stylesheet" href="assets/css/adminlte.min.css">
     <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
