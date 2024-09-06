@@ -15,7 +15,7 @@ session_destroy(); // ลบตัวแปร session ทั้งหมด
     <?php include_once('favicons.php'); ?>
     <?php include_once('startScreen.php'); ?>
     <!-- <link rel="manifest" href="app.webmanifest?<?php echo time(); ?>"> -->
-    <link crossorigin="use-credentials" rel="manifest" href="app.webmanifest?<?php echo time(); ?>">
+    <link crossorigin="use-credentials" rel="manifest" href="app.webmanifest">
 
     <link rel="stylesheet" href="assets/css/adminlte.min.css">
     <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
