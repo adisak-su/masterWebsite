@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  web-deploy-yin-pp2831-com:
-          name: Deploy website on yin-pp2831-com
+  web-deploy-masterWebsite:
+          name: Deploy website on masterWebsite
           runs-on: ubuntu-latest
           steps:
           - name: Get latest code
@@ -37,7 +37,7 @@ jobs:
               server-dir: /shoppings.infinityfreeapp.com/htdocs/masterWebsite/  # เปลี่ยนเป็นเส้นทางที่ถูกต้องของเว็บไซต์
 
   web-deploy-adisak-infinityfreeapp-com:
-          name: Deploy website on shoppings-infinityfreeapp-com
+          name: Deploy website on adisak-infinityfreeapp-com
           runs-on: ubuntu-latest
           steps:
           - name: Get latest code
