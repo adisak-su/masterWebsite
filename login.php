@@ -37,14 +37,8 @@ session_destroy(); // ลบตัวแปร session ทั้งหมด
                             <h3 class="text-center font-weight-bold"><?php echo $shopName; ?></h3>
                         </div>
                         <form id="formData" style="font-size: 1.25rem;">
-                            <div class="card-body" style="border-bottom:1px solid rgba(0,0,0,.125)">
+                            <div class="card-body">
 
-                                <!-- <div class="form-group">
-                                <div class="input-group">
-                                    <input class="input" required type="text" id="username" name="username" value="admin">
-                                    <label class="label" for="username">&ensp;ชื่อผู้ใช้&ensp;</label>
-                                </div>
-                            </div> -->
                                 <div class="form-group">
                                     <div class="input-group">
                                         <input class="input" required type="email" id="email" name="email" value="adisak.55555@gmail.com">
@@ -57,18 +51,11 @@ session_destroy(); // ลบตัวแปร session ทั้งหมด
                                         <label class="label" for="password">&ensp;รหัสผ่าน&ensp;</label>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex mt-4 justify-content-between align-items-center">
                                     <button name="submit" class="btn btn-primary btn-block" style="max-width:50%" type="submit" name="LoginBT" id="LoginBT">เข้าสู่ระบบ</button>
                                     <a href="adminPages/managerPassword/index_forget.php">ลืมรหัสผ่าน</a>
                                 </div>
 
-                                <!-- <div class="d-flex justify-content-between align-items-center" style="border-top:1px solid rgba(0,0,0,.125)">
-                                    <button name="submit" class="btn btn-primary btn-block" style="max-width:50%" type="submit" name="LoginBT" id="LoginBT">เข้าสู่ระบบ</button>
-                                    <a href="adminPages/managerPassword/index_forget.php">ลืมรหัสผ่าน</a>
-                                </div> -->
-                                <!-- <div class="d-flex" style="justify-content: center;margin-top:16px;">
-                                <button name="submit" class="btn btn-primary btn-block" style="max-width:50%" type="submit" name="LoginBT" id="LoginBT">เข้าสู่ระบบ</button>
-                            </div> -->
                             </div>
                             <footer class="text-secondary text-center">
                                 <!-- <div class="d-flex justify-content-between align-items-center">
