@@ -8,15 +8,29 @@ session_destroy(); // ลบตัวแปร session ทั้งหมด
 
 <head>
     <meta charset="UTF-8">
-    <meta HTTP-EQUIV="CACHE-CONTROL" content="NO-CACHE">
+    
     <title>Login || <?php echo $shopName; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Master Web" />
+    
+    <link crossorigin="use-credentials" rel="manifest" href="app.webmanifest?<?php echo time(); ?>">
+    
     <!-- Favicons -->
 
     <?php include_once('favicons.php'); ?>
     <?php include_once('startScreen.php'); ?>
-    <!-- <link rel="manifest" href="app.webmanifest?<?php echo time(); ?>"> -->
+    
+    <!-- 
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <link rel="manifest" href="app.webmanifest">
     <link crossorigin="use-credentials" rel="manifest" href="app.webmanifest">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta HTTP-EQUIV="CACHE-CONTROL" content="NO-CACHE">
+    <link rel="manifest" href="app.webmanifest?<?php echo time(); ?>"> -->
+    
 
     <link rel="stylesheet" href="assets/css/adminlte.min.css">
     <link rel="stylesheet" href="plugins/toastr/toastr.min.css">

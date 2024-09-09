@@ -1,6 +1,5 @@
 {
     "name": "Master Website",
-    "short_name": "MWS",
     "display": "standalone",
     "start_url": "."
 }
